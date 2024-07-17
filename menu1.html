@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="icon" href="icono/logo2.png">
+    <link rel="stylesheet" href="css/menu1.css">
+</head>
+<body>
+
+  <header>
+    <div class="container-hero">
+      <div class="container hero">
+        <div class="customer-support">
+          <img src="icono/auriculares.png" alt="auriculares" class="auriculares">
+          <div class="content-customer-support">
+            <span class="text">Soporte al cliente</span>
+            <span class="number">123-456-7890</span>
+          </div>
+        </div>
+  
+        <div class="container-logo">
+          <a href="inicio.html"><img src="icono/logo.png" alt="logo"></a>
+        </div>
+  
+        <div class="container-user">
+         <a href="regis.html"> <img src="icono/usuario.png" alt="usuario" class="usuario"></a>
+          <img src="icono/carrito1.png" alt="carrito" class="carrito" id="ver-carrito">
+          <div class="content-shopping-cart">
+            <span id="ver-carrito">Carrito (<span id="contador-carrito">0</span>)</span>
+          </div>
+          <div id="carrito" class="carrito-oculto">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito">
+              <!-- Items del carrito se agregarán aquí por JavaScript -->
+            </ul>
+            <div class="footer-carrito">
+              <p id="total-carrito-container">Total: $<span id="total-carrito">0.00</span></p>
+              <button id="comprar-carrito">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </div>
+    <div class="container-navbar">
+      <nav class="navbar container">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="menu1.html">MENÚ</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="contactos.html">CONTACTO</a></li>
+          
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+  
+        <form class="search-form">
+          <input type="search" id="search-input" placeholder="Buscar..." />
+          <button class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <div id="search-results"></div> <!-- Contenedor para la guía de búsqueda -->
+        </form>
+        
+        
+      </nav>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="support-popup">
+      <p>Está llamando al soporte...</p>
+      <button id="close-support">Cerrar</button>
+    </div>
+  </header>
+  
+
+  </header>
+  
+  <div id="mensaje-compra">Compra realizada con éxito.</div>
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <div class="barra-lateral">
+        
+
+        <nav class="navegacion">
+            <ul class="barra-lateral navegacion">
+                <li>
+                    <a  href="#seccion1" class="nav-link">
+                        <ion-icon name="mail-unread-outline"></ion-icon>
+                        <span>lattes y expresos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seccion2" class="nav-link">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>Sobre hielo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seccion3" class="nav-link">
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                        <span>Mezclas congeladas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seccion4" class="nav-link">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                        <span>Bagel</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seccion5" class="nav-link">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                        <span>Desayuno del dia</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seccion6" class="nav-link">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                        <span>Dulces Tentaciones</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+       
+    </div>
+
+
+
+
+
+    <main>
+        
+        <section class="container specials">
+          <section id="seccion1" class="container999"><h1 class="heading-1">lattes y expresos</h1></section>
+          
+            <div class="container-products">
+              <!-- Producto 1 -->
+              <div class="card-product" data-id="1" data-nombre="americano" data-precio="4.60">
+                <div class="container-img">
+                  <img src="img/lattes-expresos/1americano.png" alt="Croissants" />
+                 
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>americano</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$4.60 </p>
+                </div>
+              </div>
+              <!-- Producto 2 -->
+              <div class="card-product" data-id="2" data-nombre="capuchino" data-precio="5.70">
+                <div class="container-img">
+                  <img src="img/lattes-expresos/2capuchino.png"alt="Cafeincafe-ingles.jpg"/>
+                  
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>capuchino</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$5.70 </p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="card-product" data-id="3" data-nombre="Café-exprés" data-precio="3.00">
+                <div class="container-img">
+                  <img src="img/lattes-expresos/3café-exprés.png" alt="3café-exprés.png" />
+                 
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3>café exprés</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$3.00 </p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="card-product" data-id="4" data-nombre="Macchiato" data-precio="5.50">
+                <div class="container-img">
+                  <img src="img/lattes-expresos/4macchiato.png" alt="Cafe Liqueurs" />
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>Macchiato</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$5.50</p>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+<br><br>
+          <section class="container specials">
+            
+          
+            <div class="container-products">
+              <!-- Producto 1 -->
+              <div class="card-product" data-id="5" data-nombre="breve" data-precio="3.50">
+                <div class="container-img">
+                  <img src="img/lattes-expresos/breve.png" alt="breve"/>
+                 
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>Breve</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$3.50 </p>
+                </div>
+              </div>
+              <!-- Producto 2 -->
+              <div class="card-product" data-id="6" data-nombre="café-con-leche" data-precio="3.50">
+                <div class="container-img">
+                  <img
+                    src="img/lattes-expresos/Cafe-con-leche.webp"
+                    alt="cafe-con-leche"
+                  />
+                  
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>Cafe con leche</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$3.50 </p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="card-product" data-id="7" data-nombre="Carga de profundidad" data-precio="2.00">
+                <div class="container-img">
+                  <img src="img/lattes-expresos/carga-de-profundidad.png" alt="carga de profundidad" />
+                 
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3>CARGA DE PROFUNDIDAD</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$2.00 </p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="card-product" data-id="8" data-nombre="Chocolate caliente" data-precio="5.50">
+                <div class="container-img">
+                  <img src="img/lattes-expresos/cholocalete-caliento.png" alt="Cchocolate caliente" />
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>CHOCOLATE CALIENTE</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$5.50</p>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+
+
+          <br><br>
+          <section class="container specials">
+            
+          
+            <div class="container-products">
+              <!-- Producto 1 -->
+              <div class="card-product" data-id="9" data-nombre="Latte northern lite" data-precio="4.00">
+                <div class="container-img">
+                  <img src="img/lattes-expresos/latte-Northern-lite.png" alt="latte northern" />
+                 
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>LATTE NORTHERN LITE</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$4.00 </p>
+                </div>
+              </div>
+              <!-- Producto 2 -->
+              <div class="card-product" data-id="10" data-nombre="Latte" data-precio="4.50">
+                <div class="container-img">
+                  <img
+                    src="img/lattes-expresos/Letté.png"
+                    alt="latte"
+                  />
+                  
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>LATTE</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$4.50 </p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="card-product" data-id="11" data-nombre="Moca" data-precio="3.50">
+                <div class="container-img">
+                  <img src="img/lattes-expresos/moca.png" alt="MOCA" />
+                 
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3>MOCA</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$3.50 </p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="card-product" data-id="12" data-nombre="PRENSA ARTESANAL" data-precio="6.00">
+                <div class="container-img">
+                  <img src="img/lattes-expresos/prensa-artesanal.png" alt="prensa-artesanal" />
+                  
+                </div>
+                <div class="content-card-product">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>PRENSA ARTESANAL</h3>
+                  <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+                  <p class="price">$6.00</p>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+<br><br><br>
+
+
+
+
+<section class="container specials">
+   <section id="seccion2" class="container999"> <h1 class="heading-1">sobre hielo</h1></section>
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="13" data-nombre="americano congelado" data-precio="5.60">
+        <div class="container-img">
+          <img src="img/sobre-hielo/americano-congelado.jpg" alt="americano" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>americano congelado</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$5.60 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="14" data-nombre="Cafe con leche helado" data-precio="5.70">
+        <div class="container-img">
+          <img
+            src="img/sobre-hielo/cafe-con-leche-helado.jpg" alt="Cafe incafe con leche.jpg" style="height: auto;" width="200px"/>
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>cafe con leche helado</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$5.70 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="15" data-nombre="Cafe con leche helado de vainilla" data-precio="4.00">
+        <div class="container-img">
+          <img src="img/sobre-hielo/Café-con-leche-helado-de-vainilla.jpg" alt="cafe con leche helado de vainilla" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>cafe con leche helado de vainilla</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.00 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="16" data-nombre="Corretto de caramelo de helado" data-precio="5.50">
+        <div class="container-img">
+          <img src="img/sobre-hielo/Corretto-de-caramelo-helado.jpg" alt="corretto de caramelo de helado" style="height: auto;" width="200px"/>
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>corretto de caramelo de helado</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$5.50</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <br><br>
+  <section class="container specials">
+    
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="17" data-nombre="Latte matcha helado" data-precio="5.60">
+        <div class="container-img">
+          <img src="img/sobre-hielo/Latte-glacé matcha.jpg" alt="Latte-glacé" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Latte matcha helado </h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$5.60 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="18" data-nombre="Moccaccion helado" data-precio="6.70">
+        <div class="container-img">
+          <img
+            src="img/sobre-hielo/moccaccino-helado.jpg"
+            alt="moccaccino-helado" style="height: auto;" width="200px" />
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>moccaccino helado</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$6.70 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="19" data-nombre="Refresco italiano" data-precio="6.00">
+        <div class="container-img">
+          <img src="img/sobre-hielo/refresco-italiano.jpg" alt="refresco-italiano" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+          <h3>refresco italiano</h3>
+
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$6.00 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="20" data-nombre="Té helado" data-precio="3.40">
+        <div class="container-img">
+          <img src="img/sobre-hielo/Té-helado.jpg" alt="Té-helado" style="height: auto;" width="200px"/>
+          
+        </div>
+        <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Té helado</h3>
+            <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+            <p class="price">$3.40</p>
+            
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <br><br><br>
+
+
+
+
+<section class="container specials">
+    <section id="seccion3" class="container999"><h1 class="heading-1">mezclas congeladas</h1></section>
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="21" data-nombre="Batido chai" data-precio="4.60">
+        <div class="container-img">
+          <img src="img/mezclas-congeladas/batido-chai.jpg" alt="batido-chai" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>batido chai</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.60 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="22" data-nombre="Batido de té verde matcha" data-precio="6.70">
+        <div class="container-img">
+          <img
+            src="img/mezclas-congeladas/Batido-de-té-verde-matcha.jpg" alt="Batido-de-té-verde-matcha" style="height: auto;" width="200px"/>
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Batido de té verde matcha</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$6.70 </p>
+        </div>
+      </div>
+     
+      <!-- 3 -->
+      <div class="card-product" data-id="23" data-nombre="choc frette" data-precio="5.60">
+        <div class="container-img">
+          <img src="img/mezclas-congeladas/choc'frette.jpg" alt="choc'frette" style="height: auto;" width="200px"/>
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>choc'frette</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$5.60</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<br> <br>
+
+  <section class="container specials">
+    
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="24" data-nombre="Frappe de moca" data-precio="7.00">
+        <div class="container-img">
+          <img src="img/mezclas-congeladas/frappe-de-moca.jpg" alt="frappe-de-moca" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>frappe de moca</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$7.00 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="25" data-nombre="Frappé de vainilla" data-precio="5.50">
+        <div class="container-img">
+          <img
+            src="img/mezclas-congeladas/Frappé-de-vainilla.jpg" alt="Frappé-de-vainilla" style="height: auto;" width="200px"/>
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Frappé de vainilla</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$5.50 </p>
+        </div>
+      </div>
+     
+      <!-- 3 -->
+      <div class="card-product" data-id="26" data-nombre="Frappe expreso" data-precio="5.60">
+        <div class="container-img">
+          <img src="img/mezclas-congeladas/Frappé-expreso.jpg" alt="Frappé-expreso" style="height: auto;" width="200px"/>
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Frappé expreso</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$5.60</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+
+  <section class="container specials">
+   <section id="seccion4"> <h1 class="heading-1">Bagel</h1></section>
+   
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="27" data-nombre="Bagel asiago con queso crema" data-precio="4.90">
+        <div class="container-img">
+          <img src="img/bagel/bagel-asiago-con-queso-crema.png" alt="bagel asiago con queso crema" />
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Bagel asiago con queso crema</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.90 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="28" data-nombre="Bagel asiago" data-precio="5.70">
+        <div class="container-img">
+          <img
+            src="img/bagel/bagel-asiago.png"
+            alt="bagel-asiago.jpg" style="height: auto; width: 200px;" />
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>bagel asiago</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$5.70 </p>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card-product" data-id="29" data-nombre="Bagel con queso crema" data-precio="3.00">
+        <div class="container-img">
+          <img src="img/bagel/bagel-con-queso-crema.png" alt="bagel-con-queso-crema" />
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>bagel con queso crema</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$3.00 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="30" data-nombre="Bagel de arandanos" data-precio="6.60">
+        <div class="container-img">
+          <img src="img/bagel/bagel-de-arandnos.png" alt="bagel-de-arandnos" />
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>bagel de arandanos</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$6.60</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<br><br>
+
+
+<section class="container specials">
+    
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="31" data-nombre="bagel de canela y pasas" data-precio="7.00">
+        <div class="container-img">
+          <img src="img/bagel/bagel-de-canela-y-pasas.png" alt="bagel-de-canela-y-pasas" />
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>bagel de canela y pasas</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$7.00 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="32" data-nombre="bagel sencillo con queso crema" data-precio="3.70">
+        <div class="container-img">
+          <img
+            src="img/bagel/bagel-sencillo-con-queso-crema.png"
+            alt="bagel-sencillo-con-queso-crema.jpg"
+          />
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Bagel sencillo con queso crema</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$3.70 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="33" data-nombre="Bagel simple" data-precio="3.75">
+        <div class="container-img">
+          <img src="img/bagel/bagel-simple.png" alt="bagel-simple" />
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>bagel simple</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$3.75 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="34" data-nombre="Todo bagel" data-precio="4.00">
+        <div class="container-img">
+          <img src="img/bagel/todo-bagel.png" alt="todo-bagel" />
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>todo bagel</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.00</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br><br><br>
+
+
+
+
+<section class="container specials">
+  <section id="seccion5">  <h1 class="heading-1">Desayuno del dia</h1></section>
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="35" data-nombre="burrito de pollo y chorizo" data-precio="4.00">
+        <div class="container-img">
+          <img src="img/desayuno-del-dia/burrito-de-pollo-y-chorizo.png" alt="burrito-de-pollo-y-chorizo" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>burrito de pollo y chorizo</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.00 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="36" data-nombre="Huevo, salchicha y queso" data-precio="4.70">
+        <div class="container-img">
+          <img
+            src="img/desayuno-del-dia/Huevo,-salchicha-y-queso.jpg" alt="Huevo,-salchicha-y-queso" style="height: auto;" width="200px"/>
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Huevo,salchicha y queso</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.70 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="37" data-nombre="Huevo-y-queso-sobre-muffin-inglés" data-precio="3.85">
+        <div class="container-img">
+          <img src="img/desayuno-del-dia/Huevo-y-queso-sobre-muffin-inglés.jpg" alt="Huevo-y-queso-sobre-muffin-inglés.jpg" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>Huevo y queso sobre muffin inglés</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$3.85 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="38" data-nombre="Jamon, huevo y croissant suizo" data-precio="4.00">
+        <div class="container-img">
+          <img src="img/desayuno-del-dia/jamón,-huevo-y-croissant-suizo.png" alt="jamón,-huevo-y-croissant suizo" style="height: auto;" width="200px"/>
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>jamón,huevo y croissant suizo</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.00</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <br><br>
+  <section class="container specials">
+    
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="39" data-nombre="PRENSA ARTESANAL" data-precio="3.00">
+        <div class="container-img">
+          <img src="img/desayuno-del-dia/leñador.png" alt="leñador" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>leñador </h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$3.00 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="40" data-nombre="Mini pavo tocino, huevo y cheddar" data-precio="4.00">
+        <div class="container-img">
+          <img
+            src="img/desayuno-del-dia/mini-pavo-tocino,-Huevo-Y-Cheddar.png"
+            alt="moccaccino-helado" style="height: auto;" width="200px" />
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>mini pavo tocino,Huevo Y Cheddar</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.00 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="41" data-nombre="Pan plano JUST Egg, tomate asado y pesto" data-precio="5.00">
+        <div class="container-img">
+          <img src="img/desayuno-del-dia/pan-plano-JUST-Egg,-tomate-asado-y-pesto.png" alt="pan-plano-JUST-Egg,-tomate -asado-y-pesto" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+          <h3>pan plano JUST Egg,tomate asado y pesto</h3>
+
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$5.00 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="42" data-nombre="Pollo,salchicha de manzana, huevo y cheddar" data-precio="5.60">
+        <div class="container-img">
+          <img src="img/desayuno-del-dia/pollo,-salchicha-de-manzana,-huevo-y-cheddar.png" alt="pollo,-salchicha-de-manzana,-huevo-y-cheddar" style="height: auto;" width="200px"/>
+          
+        </div>
+        <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>pollo,salchicha de manzana,huevo y cheddar</h3>
+            <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+            <p class="price">$5.60</p>
+            
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <br><br>
+  <section class="container specials">
+    
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="43" data-nombre="salchicha, huevo y Cheddar" data-precio="4.60">
+        <div class="container-img">
+          <img src="img/desayuno-del-dia/salchicha,-huevo-y-cheddar.png" alt="salchicha,-huevo-y-cheddar" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>salchicha,huevo y cheddar</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.60 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="44" data-nombre="sandwich de gofres de arce" data-precio="3.50">
+        <div class="container-img">
+          <img
+            src="img/desayuno-del-dia/sandwich-de-gofres-de-arce.png"
+            alt="sandwich-de-gofres-de-arce" style="height: auto;" width="200px" />
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>sandwich de gofres de arce</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$3.50 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="45" data-nombre="Siuffle de tocino y gouda sin gluten" data-precio="5.40">
+        <div class="container-img">
+          <img src="img/desayuno-del-dia/souffle-de-tocino-y-gouda-sin-gluten.png" alt="souffle-de-tocino-y-gouda-sin-gluten" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+          <h3>souffle de tocino y gouda sin gluten</h3>
+
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$5.40 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="46" data-nombre="Tocino, huevo y cheddar" data-precio="3.60">
+        <div class="container-img">
+          <img src="img/desayuno-del-dia/tocino,-huevo-y-cheddar.png" alt="tocino,-huevo-y-cheddar" style="height: auto;" width="200px"/>
+          
+        </div>
+        <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>tocino, huevo y cheddar</h3>
+            <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+            <p class="price">$3.60</p>
+            
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br><br><br>
+
+
+
+
+<section class="container specials">
+    <section id="seccion6"><h1 class="heading-1">Dulces Tentaciones</h1></section> 
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="47" data-nombre="Bollo de bollo de chocolate blanco y frambuesa" data-precio="4.00">
+        <div class="container-img">
+          <img src="img/panaderia/bollo-de-chocolate-blanco-y-frambuesa.png" alt="bollo-de-chocolate-blanco-y-frambuesa" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>bollo de chocolate blanco y frambuesa</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.00 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="48" data-nombre="calleta con chistes de chocolate" data-precio="4.00">
+        <div class="container-img">
+          <img
+            src="img/panaderia/calleta-con-chistes-de-chocolate.png" alt="calleta-con-chistes-de-chocolate" style="height: auto;" width="200px"/>
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>calleta con chistes de chocolate</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.00 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="49" data-nombre="croissant de chocolate" data-precio="4.85">
+        <div class="container-img">
+          <img src="img/panaderia/croissant-de-chocolate.png" alt="croissant-de-chocolate" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>croissant de chocolate</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$4.85 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="50" data-nombre="croissant simple" data-precio="3.00">
+        <div class="container-img">
+          <img src="img/panaderia/croissant-simple.png" alt="croissant-simple" style="height: auto;" width="200px"/>
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>croissant simple</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$3.00</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <br><br>
+  <section class="container specials">
+    
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="51" data-nombre="Croissants" data-precio="2.00">
+        <div class="container-img">
+          <img src="img/panaderia/croissant.png" alt="croissant" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>croissant</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$2.00 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="52" data-nombre="donut glaseado" data-precio="1.70">
+        <div class="container-img">
+          <img
+            src="img/panaderia/donut-glaseado.png"
+            alt="donut-glaseado" style="height: auto;" width="200px" />
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>donut glaseado</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$1.70 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="53" data-nombre="muffin de arandanos" data-precio="2.00">
+        <div class="container-img">
+          <img src="img/panaderia/muffin-de-arandanos.png" alt="muffin-de-arandanos" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+          <h3>muffin de arandanos</h3>
+
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$2.00 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="54" data-nombre="Pan de pan de limon dulce" data-precio="2.60">
+        <div class="container-img">
+          <img src="img/panaderia/pan-de-limon-dulce.png" alt="pan-de-limon-dulce" style="height: auto;" width="200px"/>
+          
+        </div>
+        <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>pan de limon dulce</h3>
+            <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+            <p class="price">$2.60</p>
+            
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <br><br>
+  <section class="container specials">
+    
+  
+    <div class="container-products">
+      <!-- Producto 1 -->
+      <div class="card-product" data-id="56" data-nombre="paste de cafe con canela" data-precio="2.25">
+        <div class="container-img">
+          <img src="img/panaderia/paste-de-cafe-con-canela.png" alt="paste-de-cafe-con-canela" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>paste de cafe con canela</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$2.25 </p>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="card-product" data-id="57" data-nombre="pastel de chocolate pop" data-precio="1.00">
+        <div class="container-img">
+          <img
+            src="img/panaderia/pastel-de-chocolate-pop.png"
+            alt="pastel-de-chocolate-pop" style="height: auto;" width="200px" />
+          
+          
+        </div>
+        <div class="content-card-product">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>pastel de chocolate pop</h3>
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$1.00 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="58" data-nombre="pastel de cumpleaños pop" data-precio="1.00">
+        <div class="container-img">
+          <img src="img/panaderia/pastel-de-cumpleaños-pop.png" alt="pastel-de-cumpleaños-pop.png" style="height: auto;" width="200px"/>
+         
+          
+        </div>
+        <div class="content-card-product">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+          <h3>pastel de cumpleaños pop</h3>
+
+          <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+          <p class="price">$1.00 </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card-product" data-id="59" data-nombre="pop de tarta de fresa" data-precio="1.00">
+        <div class="container-img">
+          <img src="img/panaderia/pop-de-tarta-de-fresa.png" alt="pop-de-tarta-de-fresa" style="height: auto;" width="200px"/>
+          
+        </div>
+        <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>pop de tarta de fresa</h3>
+            <button class="btn-add-cart"><img src="icono/carrito1.png" alt="carrito.png"></button>
+            <p class="price">$1.00</p>
+            
+          </div>
+      </div>
+    </div>
+  </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="path/to/your/scripts.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

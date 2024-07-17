@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INICIO</title>
+  <link rel="stylesheet" href="css/inicio.css">
+  <link rel="icon" href="icono/logo2.png">
+  <script src="js/inicio.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container-hero">
+      <div class="container hero">
+        <div class="customer-support">
+          <img src="icono/auriculares.png" alt="auriculares" class="auriculares">
+          <div class="content-customer-support">
+
+           
+            <span class="text">Soporte al cliente</span>
+            <span class="number">123-456-7890</span>
+          
+          </div>
+
+
+
+        </div>
+  
+
+            
+
+
+        <div class="container-logo">
+          <a href="inicio.html"><img src="icono/logo.png" alt="logo"></a>
+        </div>
+  
+        <div class="container-user">
+         <a href="regis.html"> <img src="icono/usuario.png" alt="usuario" class="usuario"></a>
+          <img src="icono/carrito1.png" alt="carrito" class="carrito" id="ver-carrito">
+          <div class="content-shopping-cart">
+            <span id="ver-carrito">Carrito (<span id="contador-carrito">0</span>)</span>
+          </div>
+          <div id="carrito" class="carrito-oculto">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito">
+              <!-- Items del carrito se agregarán aquí por JavaScript -->
+            </ul>
+            <div class="footer-carrito">
+              <p id="total-carrito-container">Total: $<span id="total-carrito">0.00</span></p>
+              <button id="comprar-carrito">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </div>
+    <div class="container-navbar">
+      <nav class="navbar container">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="menu1.html">MENÚ</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="contactos.html">CONTACTO</a></li>
+         
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+  
+        <form class="search-form">
+          <input type="search" id="search-input" placeholder="Buscar..." />
+          <button class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <div id="search-results"></div> <!-- Contenedor para la guía de búsqueda -->
+        </form>
+        
+        
+      </nav>
+    </div>
+
+
+    <div id="overlay"></div>
+    <div id="support-popup">
+      <p>Está llamando al soporte...</p>
+      <button id="close-support">Cerrar</button>
+    </div>
+  </header>
+  
+  <div id="mensaje-compra">Compra realizada con éxito.</div>
+
+<div>
+  
+  <div class="video-container">
+    <video autoplay muted loop>
+        <source src="video/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <a href="regis.html"><img src="img/regin.png" alt="regin/png" class="overlay"></a>
+</div>
+</div>
+
+
+
+<section class="container container-features">
+  <div class="card-feature" id="shipping">
+      <img src="icono/avion.png" alt="avion" class="icon">
+      <div class="feature-content">
+          <span>Envío gratuito a nivel mundial</span>
+          <p>En pedido superior a $150</p>
+          <button class="close-button" onclick="toggleFeature('shipping')">Cerrar</button>
+          <div class="countries-list">
+              <p>Disponibles en:</p>
+              <div class="countries">
+                  <img src="flags/usa.png" alt="USA">
+                  <img src="flags/canada.png" alt="Canadá">
+                  <!-- Añadir más banderas aquí -->
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card-feature" id="cash-on-delivery">
+      <img src="icono/portadolio.png" alt="portafolio" class="icon">
+      <div class="feature-content">
+          <span>Contrareembolso</span>
+          <p>100% garantía de devolución de dinero</p>
+          <button class="close-button" onclick="toggleFeature('cash-on-delivery')">Cerrar</button>
+      </div>
+  </div>
+  <div class="card-feature" id="gift-cards">
+      <img src="icono/regalo.png" alt="regalo" class="icon">
+      <div class="feature-content">
+          <span>Tarjeta regalo especial</span>
+          <p>Ofrece bonos especiales con regalo</p>
+          <button class="close-button" onclick="toggleFeature('gift-cards')">Cerrar</button>
+      </div>
+  </div>
+  <div class="card-feature" id="customer-service">
+      <img src="icono/audifono.png" alt="audifono" class="icon">
+      <div class="feature-content">
+          <span>Servicio al cliente 24/7</span>
+          <p>Llámenos 24/7 al 123-456-7890</p>
+          <button class="close-button" onclick="toggleFeature('customer-service')">Cerrar</button>
+      </div>
+  </div>
+</section>
+
+
+<section class=" video-plantalla">
+  <div class="container-video2">
+    <div class="video-container2">
+        <video controls>
+            <source src="video/José González's Video - Apr 30, 2024.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+    </div>
+    <div class="text-container">
+
+      <h1>Bienvenidos a Buenos Días Café</h1>
+      
+      <p>
+          En Buenos Días Café, nos especializamos en ofrecerte
+           el mejor comienzo para tu día. Nuestro café, recién
+            tostado y preparado por baristas expertos, es el 
+            complemento perfecto para nuestros desayunos.
+      </p>
+      
+      <p>
+          Visítanos y disfruta de un ambiente acogedor y relajado,
+           ideal para tus reuniones matutinas, trabajar de manera 
+           remota o simplemente relajarte con una buena taza de café.
+            ¡Te esperamos en Buenos Días Café!
+      </p>
+    </div>
+</div>
+</section>
+
+
+
+<section class="container top-categories">
+  <h1 class="heading-1">Mejores Categorías</h1>
+  <div class="container-categories">
+    <div class="card-category">
+      <img src="img/dulce.jpeg" alt="dulce">
+      <p>panes y dulces</p>
+     <a href="pantdulce.html"><span>Ver más</span></a>
+    </div>
+    <div class="card-category">
+      <img src="img/expreso-category.jpg" alt="expreso-category">
+      <p>Expreso Americano</p>
+      <a href="americano.html"><span>Ver más</span></a>
+    </div>
+    <div class="card-category">
+      <img src="img/capuchino-category.jpg" alt="capuchino">
+      <p>Capuchino</p>
+      <a href="capuchino.html"><span>Ver más</span></a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="container top-products">
+  <h1 class="heading-1">Mejores Productos</h1>
+
+  <div class="container-options">
+    <span class="option active" data-option="featured">Destacados</span>
+    <span class="option" data-option="recent">Más recientes</span>
+    <span class="option" data-option="best-sellers">Mejores Vendidos</span>
+  </div>
+
+  <div class="container-products" id="featured">
+    <!-- Producto 1 -->
+    <div class="card-product" data-id="1" data-nombre="Cafe Irish" data-precio="4.60">
+      <div class="container-img">
+        <img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+        <span class="discount">-13%</span>
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Cafe Irish</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$4.60 <span>$5.30</span></p>
+      </div>
+    </div>
+    <!-- Producto 2 -->
+    <div class="card-product" data-id="2" data-nombre="cafe inglés" data-precio="5.70">
+      <div class="container-img">
+        <img src="img/cafe-ingles.jpg" alt="Cafe Inglés" />
+        <span class="discount">-22%</span>
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Cafe Inglés</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$5.70 <span>$7.30</span></p>
+      </div>
+    </div>
+
+    <div class="card-product" data-id="3" data-nombre="cafe Australiano" data-precio="3.20">
+      <div class="container-img">
+        <img src="img/cafe-australiano.jpg" alt="Cafe Australiano" />
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h3>Cafe Australiano</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$3.20</p>
+      </div>
+    </div>
+
+    <div class="card-product" data-id="4" data-nombre="Cafe Helado" data-precio="5.60">
+      <div class="container-img">
+        <img src="img/cafe-helado.jpg" alt="Cafe Helado" />
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Cafe Helado</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$5.60</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="container-products hidden" id="recent">
+    <!-- Producto 3 -->
+    <div class="card-product" data-id="5" data-nombre="cafe Australiano" data-precio="4.60">
+      <div class="container-img">
+        <img src="img/mezclas-congeladas/batido-chai.jpg" alt="Cafe Australiano" />
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h3>Cafe Australiano</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$4.60</p>
+      </div>
+    </div>
+
+    <div class="card-product" data-id="6" data-nombre="cafe Irish" data-precio="5.60">
+      <div class="container-img">
+        <img src="img/mezclas-congeladas/choc'frette.jpg" alt="Cafe Irish" />
+        
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Cafe Irish</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$5.60 </p>
+      </div>
+    </div>
+
+    <div class="card-product" data-id="7" data-nombre="cafe con leche" data-precio="5.70">
+      <div class="container-img">
+        <img src="img/sobre-hielo/cafe-con-leche-helado.jpg" alt="Cafe Inglés" />
+        
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Cafe con leche</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$5.70 <span>$7.30</span></p>
+      </div>
+    </div>
+
+    <div class="card-product" data-id="8" data-nombre="cafe helado" data-precio="3.50">
+      <div class="container-img">
+        <img src="img/lattes-expresos/moca.png" alt="Cafe Helado" />
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Moca</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$5.60</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container-products hidden" id="best-sellers">
+    <!-- Producto 4 -->
+    <div class="card-product" data-id="9" data-nombre="cafe americano" data-precio="5.60">
+      <div class="container-img">
+        <img src="img/cafe-americano.jpg" alt="Cafe americano" />
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Cafe Americano</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$5.60</p>
+      </div>
+    </div>
+
+    <div class="card-product" data-id="10" data-nombre="Cappuccino Helado" data-precio="4.60">
+      <div class="container-img">
+        <img src="img/Cappuccino-Helado1.jpg" alt="Cappuccino Helado " />
+        <span class="discount">-13%</span>
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Capuchino Helado</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$4.60 <span>$5.30</span></p>
+      </div>
+    </div>
+
+    <div class="card-product" data-id="11" data-nombre="cafe expreso" data-precio="4.60">
+      <div class="container-img">
+        <img src="img/cafe-expresso.jpg" alt="Cafe Expreso" />
+        <span class="discount">-13%</span>
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Cafe Expreso</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$4.60 <span>$5.30</span></p>
+      </div>
+    </div>
+
+    <div class="card-product" data-id="12" data-nombre="Chocolate caliente" data-precio="5.50">
+      <div class="container-img">
+        <img src="img/lattes-expresos/cholocalete-caliento.png" alt="Cafe Irish" />
+        
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Chocolate caliente</h3>
+        <span class="btn-add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+        <p class="price">$5.50 </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="container specials">
+  <h1 class="heading-1">Pan Favorito</h1>
+
+  <div class="container-products">
+    <!-- Producto 1 -->
+    <div class="card-product" data-id="13" data-nombre="croissant" data-precio="3.00">
+      <div class="container-img">
+        <img src="img/Croissants1.jpg" alt="Croissants" />
+        
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>croissants</h3>
+        <span class="btn-add-cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+        <p class="price">$4.60 </p>
+      </div>
+    </div>
+    <!-- Producto 2 -->
+    <div class="card-product" data-id="14" data-nombre="bagel" data-precio="3.00">
+      <div class="container-img">
+        <img
+          src="img/bagel1.jpg"
+          alt="Cafe incafe-ingles.jpg"
+        />
+        
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Bagel</h3>
+        <span class="btn-add-cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+        <p class="price">$3.00 </p>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card-product" data-id="15" data-nombre="pan integral" data-precio="2.25">
+      <div class="container-img">
+        <img  src="img/Pan-Integral1.jpg" alt="pan integral" class="img-pan-integral"/>
+        
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Pan Integral</h3>
+        <span class="btn-add-cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+        <p class="price">$2.25 </p>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card-product" data-id="16" data-nombre="burrito de pollo " data-precio="5.60">
+      <div class="container-img">
+        <img src="img/desayuno-del-dia/burrito-de-pollo-y-chorizo.png" alt="Cafe Liqueurs" />
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>burrito de pollo </h3>
+        <span class="btn-add-cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+        <p class="price">$5.60</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="container specials">
+  <h1 class="heading-1">Especiales</h1>
+
+  <div class="container-products">
+    <!-- Producto 1 -->
+    <div class="card-product" data-id="17" data-nombre="Corretto de caramelo helado data-precio="5.50">
+      <div class="container-img">
+        <img src="img/sobre-hielo/Corretto-de-caramelo-helado.jpg" alt="Corretto de caramelo helado" />
+        
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Corretto de caramelo helado</h3>
+        <span class="btn-add-cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+        <p class="price">$4.60 </p>
+      </div>
+    </div>
+    <!-- Producto 2 -->
+    <div class="card-product" data-id="18" data-nombre="refresco italiano" data-precio="6.00">
+      <div class="container-img">
+        <img
+          src="img/sobre-hielo/refresco-italiano.jpg"
+          alt="Cafe incafe-ingles.jpg"
+        />
+        
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>refresco italiano</h3>
+        <span class="btn-add-cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+        <p class="price">$5.70 </p>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card-product" data-id="19" data-nombre="cafe vainilla" data-precio="3.85">
+      <div class="container-img">
+        <img src="img/cafe-viena.jpg" alt="Cafe Viena" />
+        <span class="discount">-30%</span>
+        
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h3>Cafe Viena</h3>
+        <span class="btn-add-cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+        <p class="price">$3.85 <span>$5.50</span></p>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card-product" data-id="20" data-nombre="cafe Liqueurs" data-precio="5.60">
+      <div class="container-img">
+        <img src="img/cafe-liqueurs.jpg" alt="Cafe Liqueurs" />
+       
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Cafe Liqueurs</h3>
+        <span class="btn-add-cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+        <p class="price">$5.60</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="container blogs">
+  <h1 class="heading-1">Últimos Blogs</h1>
+
+  <div class="container-blogs">
+    <div class="card-blog">
+      <div class="container-img">
+        <img src="img/blog-1.jpg" alt="Imagen Blog 1" />
+        <div class="button-group-blog">
+          <span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <span>
+            <i class="fa-solid fa-link"></i>
+          </span>
+        </div>
+      </div>
+      <div class="content-blog">
+        <h3>Eventos y Promociones en la Cafetería</h3>
+        <span>23 Mayo 2024</span>
+        <p>
+          ¡Únete a nosotros el próximo viernes para una
+           noche de música en vivo con artistas locales!
+            Además, disfruta de un 20% de descuento en 
+            todas nuestras bebidas de café durante el evento.
+             No te lo pierdas.
+        </p>
+        <a href="blog.html"><div class="btn-read-more">Leer más</div></a>
+      </div>
+    </div>
+    <div class="card-blog">
+      <div class="container-img">
+        <img src="img/blog-2.jpg" alt="Imagen Blog 2" />
+        <div class="button-group-blog">
+          <span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <span>
+            <i class="fa-solid fa-link"></i>
+          </span>
+        </div>
+      </div>
+      <div class="content-blog">
+        <h3>Recetas de Café para Hacer en Casa</h3>
+        <span>23 Mayo 2024</span>
+        <p>
+          Aprende a hacer un perfecto café cold brew en casa.
+           Solo necesitas café molido grueso, agua fría y un
+            poco de paciencia. Sigue nuestra guía paso a paso
+             y disfruta de una bebida refrescante ideal para el verano.
+        </p>
+        <a href="blog.html"><div class="btn-read-more">Leer más</div></a>
+      </div>
+    </div>
+    <div class="card-blog">
+      <div class="container-img">
+        <img src="img/blog-3.jpg" alt="Imagen Blog 3" />
+        <div class="button-group-blog">
+          <span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <span>
+            <i class="fa-solid fa-link"></i>
+          </span>
+        </div>
+      </div>
+      <div class="content-blog">
+        <h3>Nuevas Adquisiciones de Cafés Especiales</h3>
+        <span>23 Mayo 2024</span>
+        <p>
+          Nos complace anunciar la llegada de nuestro
+           nuevo café etíope Sidamo. Este grano de café
+            se cultiva a altitudes de 2,000 metros sobre
+             el nivel del mar y ofrece notas florales y
+              cítricas con un cuerpo medio. 
+        </p>
+        <a href="blog.html"><div class="btn-read-more">Leer más</div></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container container-footer">
+  <div class="menu-footer">
+    <div class="contact-info">
+      <p class="title-footer">Información de Contacto</p>
+      <ul>
+        <li>
+          Dirección: Via Argentina calle 8 
+        </li>
+        <li>Teléfono: 123-456-7890</li>
+        <li>Fax: 55555300</li>
+        <li>EmaiL: Buenosdiascafé@support.com</li>
+      </ul>
+
+
+
+
+
+      <div class="card">
+        <a class="socialContainer containerOne" href="https://www.instagram.com/buenosidiascoffe/">
+          <svg viewBox="0 0 16 16" class="socialSvg instagramSvg"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
+        </a>
+        
+        <a class="socialContainer containerTwo" href="https://www.facebook.com/profile.php?id=61562647331642">
+          <svg viewBox="0 0 16 16" class="socialSvg facebookSvg"><path d="M14.5 0h-13C.672 0 0 .672 0 1.5v13C0 15.328.672 16 1.5 16H8v-6H6v-2h2V6c0-2.2 1.3-3.4 3.3-3.4.7 0 1.5.1 2 .2v2.2H12c-1 0-1.2.5-1.2 1.2v1.6h2.5l-.5 2H10.8v6h3.7c.8 0 1.5-.672 1.5-1.5v-13C16 .672 15.328 0 14.5 0z"></path>
+          </svg>
+        </a>
+
+        <a class="socialContainer containerThree" href="https://youtu.be/YcxKflmuU58">
+          <svg viewBox="0 0 24 24" class="socialSvg youtubeSvg"><path d="M23.498 6.186a2.957 2.957 0 0 0-2.085-2.09C19.76 3.485 12 3.485 12 3.485s-7.759 0-9.414.61a2.956 2.956 0 0 0-2.085 2.09C0 7.841 0 12 0 12s0 4.159.501 5.814a2.957 2.957 0 0 0 2.085 2.09c1.655.61 9.414.61 9.414.61s7.759 0 9.414-.61a2.957 2.957 0 0 0 2.085-2.09C24 16.159 24 12 24 12s0-4.159-.502-5.814zM9.545 15.568V8.432l6.273 3.568-6.273 3.568z"></path>
+          </svg>
+        </a>
+        
+        <a class="socialContainer containerFour" href="https://wa.me/50768638846">
+          <svg viewBox="0 0 16 16" class="socialSvg whatsappSvg"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
+        </a>
+      </div>             
+      
+      
+
+
+
+
+
+    </div>
+
+    <div class="information">
+      <p class="title-footer">Información</p>
+      <ul>
+        <li><a href="nosotros.html">Acerca de Nosotros</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="mas.gtml">mas</a></li>
+        <li><a href="contactos.html">Contactános</a></li>
+      </ul>
+    </div>
+
+    <div class="my-account">
+      <p class="title-footer">HORARIO</p>
+      <ul>
+       <li> lunes a viernes: 5:30 AM - 10:00 AM </li>
+       <li>sabado: 7:30 - 10:00 AM </li>
+       <li>Domingo: cerrado</li>
+      </ul>
+      
+
+      
+
+    </div>
+
+    <div class="newsletter">
+      <p class="title-footer">Boletín informativo</p>
+
+      <div class="content">
+        <p>
+          Suscríbete a nuestros boletines ahora y mantente al
+          día con nuevas colecciones y ofertas exclusivas.
+        </p>
+        <input type="email" placeholder="Ingresa el correo aquí...">
+        <button>Suscríbete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>
+      Desarrollado avanzado de la aplicacion Web @2024.
+    </p>
+
+    <img src="img/payment.png" alt="Pagos">
+  </div>
+</div>
+</footer>
+
+<script
+src="https://kit.fontawesome.com/81581fb069.js"
+crossorigin="anonymous"
+></script>
+</body>
+</html>
+
+</body>
+</html>

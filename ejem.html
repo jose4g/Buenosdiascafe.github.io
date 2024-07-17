@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más - Cafetería</title>
+    <link rel="icon" href="icono/logo2.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+	<header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <img src="icono/auriculares.png" alt="auriculares" class="auriculares">
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
+                </div>
+                <div class="container-logo">
+                    <a href="inicio.html"><img src="icono/logo.png" alt="logo"></a>
+                </div>
+                <div class="container-user">
+                    <img src="icono/usuario.png" alt="usuario" class="usuario">
+                    <img src="icono/carrito1.png" alt="carrito" class="carrito" id="ver-carrito">
+                    <div class="content-shopping-cart">
+                        <span id="ver-carrito">Carrito (<span id="contador-carrito">0</span>)</span>
+                    </div>
+                    <div id="carrito" class="carrito-oculto">
+                        <h2>Carrito de Compras</h2>
+                        <ul id="lista-carrito">
+                            <!-- Items del carrito se agregarán aquí por JavaScript -->
+                        </ul>
+                        <div class="footer-carrito">
+                            <p id="total-carrito-container">Total: $<span id="total-carrito">0.00</span></p>
+                            <button id="comprar-carrito">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="inicio.html">INICIO</a></li>
+                    <li><a href="menu1.html">MENÚ</a></li>
+                    <li><a href="conc.html">NOSOTROS</a></li>
+                    <li><a href="contactos.html">CONTACTO</a></li>
+                   
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+                <form class="search-form">
+                    <input type="search" id="search-input" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div id="search-results"></div> <!-- Contenedor para la guía de búsqueda -->
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Bienvenido a nuestra Cafetería</h1>
+            <p>Descubre más sobre nuestros productos y ofertas especiales.</p>
+        </section>
+
+        <section class="menu">
+            <h2>Menú</h2>
+            <ul>
+                <li>Café Espresso - $2.50</li>
+                <li>Latte - $3.00</li>
+                <li>Cappuccino - $3.50</li>
+                <li>Mocha - $4.00</li>
+                <li>Chocolate Caliente - $3.00</li>
+                <li>Té - $2.00</li>
+                <li>Pastel de Zanahoria - $4.50</li>
+                <li>Muffin de Arándanos - $3.00</li>
+            </ul>
+        </section>
+
+        <section class="offers">
+            <h2>Ofertas Especiales</h2>
+            <div class="offer">
+                <h3>Combo Desayuno</h3>
+                <p>Un café y un muffin de arándanos por solo $4.00</p>
+            </div>
+            <div class="offer">
+                <h3>Happy Hour</h3>
+                <p>Todos los lattes a mitad de precio de 2:00 PM a 4:00 PM</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nuestra Cafetería. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
